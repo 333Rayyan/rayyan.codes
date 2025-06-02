@@ -28,7 +28,7 @@ export default function App() {
       <nav className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
         }`}>
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-semibold text-gray-800">Rayyan</h1>
+          <h1 className="text-3xl md:text-4xl font-caramel text-teal-600">Rayyan</h1>
           <div className="flex space-x-8">
             <ScrollLink
               to="home"
@@ -61,8 +61,11 @@ export default function App() {
       {/* Hero Section */}
       <section id="home" className="h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="text-teal-600">Rayyan</span>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 flex flex-wrap justify-center items-end gap-2">
+            Hi, I'm
+            <span className="text-teal-600 font-caramel text-[3.5rem] md:text-[5rem] leading-none relative top-[2px]">
+              Rayyan
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
             I'm a Computer Science Graduate
@@ -188,13 +191,13 @@ export default function App() {
               <p className="text-sm text-teal-500 uppercase mb-2">Featured Project</p>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Platforming Game</h3>
               <p className="text-gray-700 mb-4">
-                I developed a 2D side-scrolling platformer using p5.js, where players control a robot character navigating through a mystical environment. 
+                I developed a 2D side-scrolling platformer using p5.js, where players control a robot character navigating through a mystical environment.
                 The game features smooth side-scrolling, jetpack-style movement, collectible golden keys, and environmental obstacles like canyons and mountains.
                 <br />
                 <br />
-                Players must collect four keys to reach the flagpole and complete the level while managing a limited number of lives. 
+                Players must collect four keys to reach the flagpole and complete the level while managing a limited number of lives.
                 The game includes animated character states (walking, flying, falling), interactive scenery, a scoring system, and keyboard controls for movement
-                 and flight. It demonstrates core game mechanics, sprite interactions, and dynamic camera movement in a custom-built engine.
+                and flight. It demonstrates core game mechanics, sprite interactions, and dynamic camera movement in a custom-built engine.
               </p>
               <div className="flex flex-wrap gap-4 mb-4 text-sm text-gray-500">
                 <span>p5.js</span>
